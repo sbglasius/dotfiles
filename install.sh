@@ -3,6 +3,15 @@
 
 echo "Setting up Ubuntu..."
 
+
+EKSTRA:
+SET terminal tilbagerulning til 100000 og size til 150x50 (måske som gem/7restore profil)
+
+kan man auto JA til java og virtualbox?
+
+
+
+
 echo "Checking for SSH"
 if [ ! -d $HOME/.ssh/ ]; then
     echo "SSH was not found - EXIT SCRIPT!"

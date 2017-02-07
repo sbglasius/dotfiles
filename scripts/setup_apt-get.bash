@@ -17,11 +17,6 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install -y sublime-text-installer
 
-# Java
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install -y oracle-java7-installer
-sudo apt-get install -y oracle-java8-installer
 
 sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-get update
@@ -59,8 +54,8 @@ sudo apt-get install -y gnome-sushi
 
 # Ubuntu make
 sudo apt-get install -y ubuntu-make
-sudo umake ide idea-ultimate
-sudo umake ide datagrip
+yes | sudo umake ide idea-ultimate
+yes | sudo umake ide datagrip
 
 
 # 1. Add the Spotify repository signing key to be able to verify downloaded packages
@@ -72,6 +67,24 @@ sudo apt-get update
 # 4. Install Spotify
 sudo apt-get install -y spotify-client
 
+# Vagrant
+sudo apt install -y vagrant
+
+# Power management
+sudo apt install -y tlp tlp-rdw
+sudo tlp start
+
+
+########################################################################################################################
+## Apps that need atttention
+########################################################################################################################
+
+# Java
+sudo add-apt-repository -y ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install -y oracle-java7-installer
+sudo apt-get install -y oracle-java8-installer
+
 
 # MySQL
 if [ -f ! /etc/init.d/mysql* ]; then
@@ -82,13 +95,6 @@ fi
 
 # VirtualBox
 sudo apt install -y virtualbox-qt virtualbox-ext-pack
-# Vagrant
-sudo apt install vagrant
-
-
-sudo apt install -y tlp tlp-rdw
-sudo tlp start
-
 
 
 echo "Done installing!"

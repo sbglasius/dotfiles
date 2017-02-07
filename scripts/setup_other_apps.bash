@@ -19,6 +19,7 @@ echo "Installing Lastpass..."
 wget https://lastpass.com/lplinux.tar.bz2
 tar xjvf lplinux.tar.bz2
 cd lplinux && ./install_lastpass.sh
+cd ..
 
 
 
