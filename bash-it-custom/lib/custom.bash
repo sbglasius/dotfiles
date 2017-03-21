@@ -63,3 +63,13 @@ function runCodenarcCleanCheckExitIfFailure() {
         notify-send 'BUILD WAS SUCCESSFUL!'
     fi
 }
+
+
+function runCleanTest() {
+    if ! ./gradlew clean test integrationTest; then
+        xdg-open build/reports/tests/index.html &> /dev/null
+        return 1
+    else
+        notify-send 'TEST WAS SUCCESSFUL!'
+    fi
+}

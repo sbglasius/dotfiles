@@ -1,10 +1,11 @@
 #@IgnoreInspection BashAddShebang
 
 ## COPY
-# cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
+# c
 
 ## Gradle
 alias gwcc='./gradlew clean check'
+alias gwct='./gradlew clean test integrationTest'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
 
@@ -23,13 +24,15 @@ alias useJava7='yes | sudo apt-get install oracle-java7-set-default && source ~/
 alias copyBashItCustom='cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/ && cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/ && source ~/.bashrc'
 
 ## Open reports
-alias opentestreports='xdg-open build/reports/tests/index.html &> /dev/null'
+alias opentestreport='xdg-open build/reports/tests/index.html &> /dev/null'
+alias opencobertura='xdg-open build/reports/cobertura/index.html &> /dev/null'
 
-alias runall='runCodenarcCleanCheckExitIfFailure'
+alias runcheck='runCodenarcCleanCheckExitIfFailure'
+alias runtest='runCleanTest'
 
 ## GIT
-alias pull="git pull"
-alias push="git push"
+alias pull="git pull ; alert"
+alias push="git push ; alert"
 
 ## SKAT
 alias skattunnel='ssh -N -L 127.0.0.1:7011:sktdemo01esb01:7011 -L 127.0.0.1:7013:sktdemo01esb01:7013 admin@sktdemo01jmp01.ccta.dk'
