@@ -74,6 +74,9 @@ sudo apt install -y vagrant
 sudo apt install -y tlp tlp-rdw
 sudo tlp start
 
+sudo apt install -y dconf-editor
+
+
 
 ########################################################################################################################
 ## Apps that need atttention

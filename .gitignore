@@ -47,5 +47,4 @@ fabric.properties
 
 .DS_Store
 .dotfiles.iml
-.gitignore
 .idea/

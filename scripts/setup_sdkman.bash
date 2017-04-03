@@ -9,3 +9,6 @@ yes | sdk install grails 2.5.0
 yes | sdk install groovy
 yes | sdk install gradle
 yes | sdk install maven
+
+
+# HUSK: https://github.com/sdkman/sdkman-extensions
