@@ -10,10 +10,10 @@ alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
 
 ## GRAILS
-alias gt='grails -reloading test --non-interactive'
-alias gta='grails test-app -echoOut --non-interactive'
-alias grun='grails -reloading run-app --non-interactive'
-alias gcta='clear && grails clean-all && grails compile && grails test-app'
+alias gt='sdk switch && grails -reloading test --non-interactive'
+alias gta='sdk switch && grails test-app -echoOut --non-interactive'
+alias grun='sdk switch && grails -reloading run-app --non-interactive'
+alias gcta='sdk switch && clear && grails clean-all && grails compile && grails test-app'
 #alias opentests='open target/test-reports/html/index.html'
 
 ## JAVA
