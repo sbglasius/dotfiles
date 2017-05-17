@@ -76,6 +76,10 @@ sudo tlp start
 
 sudo apt install -y dconf-editor
 
+sudo add-apt-repository -y ppa:unit193/encryption
+sudo apt update
+sudo apt install -y veracrypt
+
 
 
 ########################################################################################################################
@@ -87,6 +91,9 @@ sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java8-installer
+# Java Cryptography Extension
+sudo apt install -y oracle-java7-unlimited-jce-policy
+sudo apt install -y oracle-java8-unlimited-jce-policy
 
 
 # MySQL
