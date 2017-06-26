@@ -3,11 +3,15 @@
 ## COPY
 # cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/¡
 
+## Navigation
+alias crs='cd ~/PROJEKTER/SKAT/CRS/crs'
+
 ## Gradle
 alias gwcc='./gradlew clean check'
 alias gwct='./gradlew clean test integrationTest'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
+alias cleanDockerCleanCheckCircleEnv='docker stop postgres && sudo rm -rf /tmp/postgres_data/ && docker start postgres && ./gradlew clean check -Dgrails.env=circleci'
 
 ## GRAILS
 alias gt='sdk switch && grails -reloading test --non-interactive'
@@ -24,7 +28,7 @@ alias useJava7='yes | sudo apt-get install oracle-java7-set-default && source ~/
 alias copyBashItCustom='cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/ && cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/ && source ~/.bashrc'
 
 ## Open reports
-alias opentestreport='xdg-open build/reports/tests/test/index.html &> /dev/null'
+alias opentestreport='xdg-open build/reports/tests/index.html &> /dev/null'
 alias opencobertura='xdg-open build/reports/cobertura/index.html &> /dev/null'
 
 alias runcheck='runCodenarcCleanCheckExitIfFailure'
