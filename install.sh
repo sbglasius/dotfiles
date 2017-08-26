@@ -45,6 +45,9 @@ source scripts/setup_sdkman.bash
 # Install custom scripts
 source scripts/setup_scripts.bash
 
+# Run Dell XPS custom stuff
+source scripts/setup_dell_xps.bash
+
 ##########################################################################################
 ## Backup:
 # https://www.ostechnix.com/systemback-restore-ubuntu-desktop-and-server-to-previous-state/
