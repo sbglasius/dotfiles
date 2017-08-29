@@ -14,12 +14,7 @@ Follow these install instructions to setup a new Ubuntu.
 
 1. Set main download server
    1. Software & updates -> Ubuntu software -> Download from: Main server
-1. From an USB key:
-   1. Copy public and private SSH keys to `~/.ssh`
-   1. Copy `gradle.properties`to `~/.gradle`
-   1. Copy hosts `/etc/hosts`
-1. Install `git`
-   1. `sudo apt-get update && sudo apt-get install -y git`
+   1. Script: https://askubuntu.com/questions/104695/how-do-i-change-mirrors-in-ubuntu-server-from-regional-to-main
 1. Clone this repo to `~/.dotfiles`
    1. `git clone git@github.com:brianjohnsen/dotfiles.git ~/.dotfiles`
 1. Run `install.sh` to start the installation
