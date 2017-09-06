@@ -14,8 +14,8 @@ Follow these install instructions to setup a new Ubuntu.
 
 1. Set main download server
    1. Software & updates -> Ubuntu software -> Download from: Main server
-   1. Script: https://askubuntu.com/questions/104695/how-do-i-change-mirrors-in-ubuntu-server-from-regional-to-main
-1. Clone this repo to `~/.dotfiles`
+1. Install git: `sudo apt-get update && sudo apt-get install -y git`
+1. Clone this repo to `~/.dotfiles` 
    1. `git clone git@github.com:brianjohnsen/dotfiles.git ~/.dotfiles`
 1. Run `install.sh` to start the installation
 1. Make sure Dropbox is set up and synced

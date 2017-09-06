@@ -52,6 +52,9 @@ sudo apt-get install -y duplicity
 # Preview (http://www.omgubuntu.co.uk/2016/09/gnome-sushi-mac-quick-look-nautilus)
 sudo apt-get install -y gnome-sushi
 
+# http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html
+sudo apt install -y xdotool
+
 # Ubuntu make
 sudo apt-get install -y ubuntu-make
 yes | sudo umake ide idea-ultimate
