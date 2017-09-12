@@ -26,6 +26,8 @@ sudo add-apt-repository -y ppa:hluk/copyq
 sudo apt-get update
 sudo apt install -y copyq
 
+sudo apt install -y xclip
+
 sudo apt install -y nautilus-dropbox
 
 sudo add-apt-repository -y universe
