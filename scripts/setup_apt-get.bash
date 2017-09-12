@@ -22,9 +22,9 @@ sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-get update
 sudo apt-get install -y fasd
 
-sudo add-apt-repository -y ppa:diodon-team/stable
+sudo add-apt-repository -y ppa:hluk/copyq
 sudo apt-get update
-sudo apt-get install -y diodon
+sudo apt install -y copyq
 
 sudo apt install -y nautilus-dropbox
 
