@@ -7,16 +7,18 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 echo "Installing..."
+
 # Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get update
 sudo apt-get install -y google-chrome-stable
 
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+# Sublimetext: https://www.sublimetext.com/docs/3/linux_repositories.html
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
-sudo apt-get install -y sublime-text-installer
-
+sudo apt-get install -y sublime-text
 
 sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-get update

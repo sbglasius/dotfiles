@@ -9,9 +9,11 @@ sudo dpkg -i gitkraken-amd64.deb
 
 
 # Slack
+# Check: https://slack.com/downloads/linux
 echo "Installing Slack..."
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.3.4-amd64.deb
-sudo dpkg -i slack-desktop-2.3.4-amd64.deb
+slack_version=2.8.0
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-$slack_version-amd64.deb
+sudo dpkg -i slack-desktop-$slack_version-amd64.deb
 
 
 # Lastpass
