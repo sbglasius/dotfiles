@@ -35,7 +35,7 @@ alias runcheck='runCodenarcCleanCheckExitIfFailure'
 alias runtest='runCleanTest'
 
 ## GIT
-alias pull="git pull ; alert"
+alias pull="git pull && git submodule update --init --recursive ; alert"
 alias push="git push ; alert"
 
 ## SKAT
@@ -60,7 +60,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # From http://apple.stackexchange.com/questions/110343/copy-last-command-in-terminal
 #alias copyLastCmd='fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy'
-
 
 
 ########################################################################################################################
