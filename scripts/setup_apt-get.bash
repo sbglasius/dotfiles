@@ -39,9 +39,9 @@ sudo apt-get install -y unity-tweak-tool
 
 sudo add-apt-repository -y ppa:snwh/pulp
 sudo apt-get update
-sudo apt-get install paper-icon-theme
-sudo apt-get install paper-gtk-theme
-sudo apt-get install paper-cursor-theme
+sudo apt-get install -y paper-icon-theme
+sudo apt-get install -y paper-gtk-theme
+sudo apt-get install -y paper-cursor-theme
 
 
 sudo apt-get install -y wkhtmltopdf
@@ -89,6 +89,9 @@ sudo apt install -y veracrypt
 
 sudo apt install -y ranger
 
+# Database
+sudo apt install -y postgresql-client-common
+sudo apt install -y postgresql-client8
 
 ########################################################################################################################
 ## Apps that need atttention
@@ -97,6 +100,8 @@ sudo apt install -y ranger
 # Java
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
+echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java8-installer
 # Java Cryptography Extension
