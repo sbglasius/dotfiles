@@ -9,6 +9,9 @@ sudo add-apt-repository -y ppa:snwh/pulp
 sudo add-apt-repository -y ppa:unit193/encryption
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:aacebedo/fasd
+sudo apt-add-repository -y ppa:maarten-fonville/android-studio
+sudo apt-add-repository -y ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:alessandro-strada/ppa
 
 # until fasd gets a zesty release
 sudo echo >> /etc/apt/sources.list.d/aacebedo-ubuntu-fasd-zesty.list "deb http://ppa.launchpad.net/aacebedo/fasd/ubuntu yakkety main"
@@ -33,6 +36,8 @@ sudo apt install -y nvidia-375
 # Openssh
 sudo apt install -y openssh-server
 
+# OpenConnect network-manager
+sudo apt install -y network-manager-openconnect network-manager-openconnect-gnome
 # Chrome
 sudo apt install -y google-chrome-stable
 
@@ -45,6 +50,8 @@ sudo apt install -y copyq
 sudo apt install -y xclip
 
 sudo apt install -y nautilus-dropbox
+
+sudo apt install -y indicator-multiload
 
 sudo apt install -y libgconf2-4 libnss3-1d libxss1
 sudo apt install -y unity-tweak-tool
@@ -65,9 +72,13 @@ sudo apt install -y duplicity
 # Preview (http://www.omgubuntu.co.uk/2016/09/gnome-sushi-mac-quick-look-nautilus)
 sudo apt install -y gnome-sushi
 
+# Google drive suppor
+#suudo apt install -y grive
+sudo apt install -y google-drive-ocamlfuse
+sudo apt install -y libpam-mount
 # http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html
 sudo apt install -y xdotool
-
+sudo apt install -y net-tools
 # Ubuntu make
 sudo apt install -y ubuntu-make
 mkdir -p $HOME/applications/idea
@@ -101,6 +112,9 @@ sudo apt install -y ranger
 # Database
 sudo apt install -y postgresql-client-common
 sudo apt install -y postgresql-client8
+
+# Android Studio
+sudo apt install -y android-studio
 
 ########################################################################################################################
 ## Apps that need atttention

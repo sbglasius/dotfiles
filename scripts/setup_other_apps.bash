@@ -11,11 +11,11 @@ rm gitkraken-amd64.deb
 
 # Slack
 # Check: https://slack.com/downloads/linux
-echo "Installing Slack..."
-slack_version=2.8.0
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-$slack_version-amd64.deb
-sudo dpkg -i slack-desktop-$slack_version-amd64.deb
-rm slack-desktop-$slack_version-amd64.deb
+#echo "Installing Slack..."
+#slack_version=2.8.0
+#wget https://downloads.slack-edge.com/linux_releases/slack-desktop-$slack_version-amd64.deb
+#sudo dpkg -i slack-desktop-$slack_version-amd64.deb
+#rm slack-desktop-$slack_version-amd64.deb
 
 
 # Lastpass
@@ -27,6 +27,8 @@ rm lplinux.tar.bz2
 rm -r lplinux
 cd ..
 
-
+# Franz
+echo "Installing franz"
+./setup-franz-ubuntu.sh
 
 echo "Done installing!"
