@@ -4,7 +4,6 @@
 # cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/¡
 
 ## Navigation
-alias crs='cd ~/PROJEKTER/SKAT/CRS/crs'
 
 ## Gradle
 alias gwcc='./gradlew clean check'
@@ -21,8 +20,8 @@ alias gcta='sdk switch && clear && grails clean-all && grails compile && grails 
 #alias opentests='open target/test-reports/html/index.html'
 
 ## JAVA
-alias useJava8='yes | sudo apt-get install oracle-java8-set-default && source ~/.bashrc'
-alias useJava7='yes | sudo apt-get install oracle-java7-set-default && source ~/.bashrc'
+alias setjdk7='sdk use java 7u80-oracle && alert "Using JDK-7"'
+alias setjdk8='sdk use java 8u151-oracle && alert "Using JDK-8"'
 
 ## Bash-It
 alias copyBashItCustom='cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/ && cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/ && source ~/.bashrc'
@@ -49,6 +48,14 @@ alias path='echo -e ${PATH//:/\\n}'
 # From: http://askubuntu.com/questions/409611/desktop-notification-when-long-running-commands-complete
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+
+alias g='sdk switch'
+alias f='less +F '
+
+alias erst='export GRADLE_OPTS="-Ddev.erst=true" && export GRAILS_OPTS="-Ddev.erst=true" && echo "ERST enabled"'
+alias erst-debug='export GRADLE_OPTS="-Ddev.erst=true -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005" && export GRAILS_OPTS="-Ddev.erst=true -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005" && echo "ERST debug enabled"'
+
+alias pwdc='pwd | pbcopy'
 
 ########################################################################################################################
 ## From bash-it -> osx.aliases.bash
