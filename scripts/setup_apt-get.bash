@@ -12,6 +12,7 @@ sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-add-repository -y ppa:maarten-fonville/android-studio
 sudo apt-add-repository -y ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:alessandro-strada/ppa
+sudo add-apt-repository -y ppa:ys/emojione-picker 
 
 # until fasd gets a zesty release
 sudo echo >> /etc/apt/sources.list.d/aacebedo-ubuntu-fasd-zesty.list "deb http://ppa.launchpad.net/aacebedo/fasd/ubuntu yakkety main"

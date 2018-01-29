@@ -29,6 +29,6 @@ cd ..
 
 # Franz
 echo "Installing franz"
-./setup-franz-ubuntu.sh
+./setup_franz-ubuntu.sh
 
 echo "Done installing!"
